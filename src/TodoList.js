@@ -1,11 +1,10 @@
 import React from "react";
+import "./TodoList.css";
 
 export const TodoList = (props) => {
   return (
-    <li>
-      <span>C</span>
-      <p>{props.text}</p>
-      <span>X</span>
-    </li>
+    <section>
+      <ul>{props.children}</ul>
+    </section>
   );
 };
